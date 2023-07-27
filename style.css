@@ -1,0 +1,145 @@
+html {
+    font-size: 10px;
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(211, 208, 228, 0.635);
+    font-family: sans-serif;
+}
+
+.container{
+    min-width:300px;
+}
+
+.search-box{
+    margin-top:5rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+}
+
+form {
+    text-align: center;
+}
+
+
+input {
+    padding: 8px 40px;
+    text-align: center;
+    font-size: 1.7rem;
+    border:2px solid lightgray;
+    border-radius: 3px;
+}
+
+#submit-btn {
+    padding: 8px 20px;
+    font-size: 1.7rem;
+    border:2px solid lightgray;
+    border-radius: 3px;
+    margin-left: 0.5rem;
+}
+
+#meals{
+    width:75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+    padding: 2rem;
+}
+
+#result h2{
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 3rem;
+}
+
+.meal h3{
+    font-size:2rem;
+}
+
+
+.meal {
+    width:250px;
+    height:auto;
+    border-radius: 5px;
+    box-shadow: 0 0 4px 2px gray;
+    padding:20px 10px;
+    text-align: center;
+}
+
+ .meal img{
+    width:100%;
+    border-radius: 2px;
+
+
+ }
+
+ .meal p {
+    font-size:1.5rem;
+ }
+
+
+ .meal #favorite{
+    padding:5px 5px;
+    margin-left: 2rem;
+    font-size:1.4rem;
+    border:none;
+    box-shadow: 0 0 5px 0 lightgray;
+    background-color: darkkhaki;
+    border-radius: 5px;
+    cursor: pointer;
+ }
+
+ 
+
+ .meal a{
+    text-decoration: none;
+    border:2px solid black;
+    padding:5px 10px;
+    border-radius: 20px;
+    color:black;
+    font-size:1.5rem;
+    
+ }
+
+ .favorites{
+    position:absolute;
+    top:10px;
+    right:20px;
+    font-size:25px;
+    color:rgb(255, 0, 68);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+ .fa-heart{
+    font-size:20px;
+    vertical-align: bottom;
+    margin-left:35px;
+ }
+
+
+
+
+ @media (max-width:368px) {
+    #submit-btn{
+        margin-top:1rem;
+    }
+ }
+
+
+
+
+
+
+
+ 
