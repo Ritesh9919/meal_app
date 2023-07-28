@@ -89,17 +89,7 @@ input {
  }
 
 
- .meal #favorite{
-    padding:5px 5px;
-    margin-left: 2rem;
-    font-size:1.4rem;
-    border:none;
-    box-shadow: 0 0 5px 0 lightgray;
-    background-color: darkkhaki;
-    border-radius: 5px;
-    cursor: pointer;
- }
-
+ 
  
 
  .meal a{
@@ -112,20 +102,7 @@ input {
     
  }
 
- .favorites{
-    position:absolute;
-    top:10px;
-    right:20px;
-    font-size:25px;
-    color:rgb(255, 0, 68);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- }
 
- .fa-heart{
-    font-size:20px;
-    vertical-align: bottom;
-    margin-left:35px;
- }
 
 
 

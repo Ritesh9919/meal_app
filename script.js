@@ -2,11 +2,10 @@ const input = document.querySelector('input');
 const submitBtn = document.getElementById('submit-btn');
 const result = document.getElementById('result');
 const meals = document.getElementById('meals');
-const favorites = document.getElementById('favorites');
-const fav = document.getElementsByClassName('fa-heart');
 
 
-const APP_ID = 'e5c1acb2';
+
+
 const APP_KEY = '5c91d83a3ababdb29dd7e38df582eff3';
 
 
@@ -19,7 +18,9 @@ async function fetchData(term) {
 
     const response = await fetch(url);
     const data = await response.json();
+    
     generateHtml(data.hits);
+    
     console.log(data);
 
 }
@@ -27,6 +28,7 @@ async function fetchData(term) {
 
 function generateHtml(results) {
     let html = '';
+    
     results.map(result => {
         html += `
         <div class="meal">
@@ -36,13 +38,14 @@ function generateHtml(results) {
         <p>Calories: ${result.recipe.calories.toFixed(2)}</p>
         
         <a href="${result.recipe.url}" target="_blank">More Info</a>
-        <i class="fa-regular fa-heart"></i>
+
         
 
         
     </div>
         `
     })
+
 
     meals.innerHTML = html;
 }
@@ -54,11 +57,6 @@ submitBtn.addEventListener('click', (e) => {
     let term = input.value;
     fetchData(term);
 });
-
-console.log(fav);
-
-
-
 
 
 
